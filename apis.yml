@@ -1,23 +1,76 @@
 aid: air-france-klm
+
 name: Air France-KLM
-description: 'Air France-KLM is a company surfaced via the API Evangelist harvest backlog (source: travel)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Air France-KLM is a leading European airline group operating worldwide, offering passenger and cargo services through its Air France, KLM, and Transavia brands. The group serves over 320 destinations, emphasizing sustainability, innovation, and customer experience. It provides extensive travel solutions, loyalty programs, and digital services, reflecting its commitment to responsible aviation and global connectivity.'
+
 url: https://raw.githubusercontent.com/api-evangelist/air-france-klm/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Aviation
+- Travel
+- Europe
+- Sustainability
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/air-france-klm-rules.yml
+- type: ChangeLog
+  url: changelog/air-france-klm-changelog.yml
+- type: Conformance
+  url: conformance/air-france-klm-conformance.yml
+- type: Vendors
+  url: vendors/air-france-klm-vendors.yml
+- type: DomainSecurity
+  url: security/air-france-klm-domain-security.yml
 - type: Website
   url: https://airfranceklm.com/
+- type: Documentation
+  url: https://www.airfranceklm.com/en
+
+apis:
+- aid: air-france-klm:air-france-klm-api
+  name: Air France-KLM API
+  description: 'Air France-KLM API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-22);
+    not the provider''s own document.'
+  humanURL: https://developer.airfranceklm.com/guides
+  baseURL: https://api.airfranceklm.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/air-france-klm-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages are a JavaScript single-page app with no static OpenAPI spec.
+  evidence:
+    - url: https://developer.airfranceklm.com/
+      status: 200
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

@@ -1,0 +1,32 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.airfranceklm.com/releasenotes/2025
+sources:
+- https://developer.airfranceklm.com/releasenotes/2025
+entries:
+- breaking: false
+  highlights:
+  - Various bug fixes.
+  version: 09-2025
+  date: '2025-09-01'
+- breaking: false
+  highlights:
+  - Fixed an issue where during project creation, the maximum limit was not appearing.
+  - Resolved several administration bugs.
+  version: 06-2025
+  date: '2025-06-01'
+- breaking: false
+  highlights:
+  - Improved the credentials overview.
+  - We've released several bug fixes.
+  version: 04-2025
+  date: '2025-04-01'
+- breaking: false
+  highlights:
+  - Improved several administrator features.
+  version: 02-2025
+  date: '2025-02-01'
+current_version: 09-2025
+note: Versioning scheme uses month-year format (MM-YYYY).
+docs: https://developer.airfranceklm.com/releasenotes/2025
