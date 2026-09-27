@@ -1,0 +1,62 @@
+openapi: 3.2.0
+info:
+  title: Air France-KLM Opendata API
+  version: '2026-09-22'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-22: 1 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Air France-KLM has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 0
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-22'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.airfranceklm.com/guides
+servers:
+- url: https://api.airfranceklm.com
+security:
+- apiKey: []
+tags:
+- name: Opendata
+paths:
+  /opendata/flightstatus:
+    get:
+      operationId: get_opendata_flightstatus
+      tags:
+      - Opendata
+      summary: GET /opendata/flightstatus
+      x-source: https://developer.airfranceklm.com/guides
+      parameters:
+      - name: endRange
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: startRange
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl --location ''https://api.airfranceklm.com/opendata/flightstatus?startRange=2025-12-31T09:00:00Z&endRange=2025-12-31T23:59:59Z''  --header ''API-Key: [YOUR_API_KEY]''  --header ''Content-Type: application/x-www-form-urlencoded''
+
+          🛠️ Replace [YOUR_API_KEY] with your actual API key before making the request.
+
+          Next Steps
+
+          🎉 Congratulations! You are now ready to start retrieving data through Air France-KLM'
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: API-Key

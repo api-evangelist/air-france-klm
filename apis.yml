@@ -49,17 +49,16 @@ common:
   url: https://www.airfranceklm.com/en
 
 apis:
-- aid: air-france-klm:air-france-klm-api
-  name: Air France-KLM API
-  description: 'Air France-KLM API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-22);
-    not the provider''s own document.'
+- aid: air-france-klm:air-france-klm-opendata-api
+  name: Air France-KLM Opendata API
+  description: The Opendata API from Air France-KLM — 1 operation(s) for opendata.
   humanURL: https://developer.airfranceklm.com/guides
   baseURL: https://api.airfranceklm.com
+  tags:
+  - Opendata
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/air-france-klm-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/air-france-klm-opendata-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
