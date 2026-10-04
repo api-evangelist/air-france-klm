@@ -55,6 +55,8 @@ apis:
   humanURL: https://developer.airfranceklm.com/guides
   baseURL: https://api.airfranceklm.com
   tags:
+  - Open Data
+  tags_raw:
   - Opendata
   properties:
   - type: OpenAPI
