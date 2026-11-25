@@ -96,7 +96,7 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Air France Klm Domain Security](https://apis.io/security/air-france-klm/air-france-klm-domain-security/)
+- [Air France-KLM Domain Security](https://apis.io/security/air-france-klm/air-france-klm-domain-security/)
 
 ## Where to find this API
 
@@ -107,18 +107,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 13.6** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 62.5 |
 | Contract quality | 11.9 |
 | Contract governance | 18.2 |
-| Operational transparency | 15.8 |
+| Operational transparency | 14.3 |
 | Developer ergonomics | 9.5 |
 | Access clarity | 0.0 |
 
-**Agent readiness 17.9** — agent-aware
+**Agent readiness 17.5** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -141,8 +141,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 4.9** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/air-france-klm/](https://apis.io/providers/air-france-klm/).
 
